@@ -18,9 +18,9 @@ namespace WinUI.DI.FrameNavigate
     public partial class App : global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
     {
         // ...
-	    private global::WinUI.DI.FrameNavigate.WinUI_DI_FrameNavigate_XamlTypeInfo.XamlMetaDataProvider _AppProvider { get; }
+        private global::WinUI.DI.FrameNavigate.WinUI_DI_FrameNavigate_XamlTypeInfo.XamlMetaDataProvider _AppProvider { get; }
 
-	    public global::Microsoft.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
+        public global::Microsoft.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             return _AppProvider.GetXamlType(type);
         }
@@ -36,8 +36,8 @@ namespace WinUI.DI.FrameNavigate.WinUI_DI_FrameNavigate_XamlTypeInfo
 
         public global::Microsoft.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
-			return Provider.GetXamlType(type);
-		}
+            return Provider.GetXamlType(type);
+        }
     }
 
     internal partial class XamlTypeInfoProvider
@@ -59,17 +59,17 @@ namespace WinUI.DI.FrameNavigate.WinUI_DI_FrameNavigate_XamlTypeInfo
             global::WinUI.DI.FrameNavigate.WinUI_DI_FrameNavigate_XamlTypeInfo.XamlSystemBaseType xamlType = null;
             global::System.Type type = _typeTable[typeIndex];
             switch (typeIndex)
-			{
-				// ...
-				case 22:
-					userType = new global::WinUI.DI.FrameNavigate.WinUI_DI_FrameNavigate_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+            {
+                // ...
+                case 22:
+                    userType = new global::WinUI.DI.FrameNavigate.WinUI_DI_FrameNavigate_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                     userType.Activator = Activate_22_MainPage;
                     userType.AddMemberName("ViewModel");
                     userType.SetIsLocalType();
                     xamlType = userType;
                     break;
-				// ...
-			}
+                // ...
+            }
             return xamlType;
         }
     }
@@ -79,8 +79,8 @@ namespace WinUI.DI.FrameNavigate.WinUI_DI_FrameNavigate_XamlTypeInfo
         // ...
         public XamlSystemBaseType(string fullName, global::System.Type underlyingType)
         {
-			// ...
-		}
+            // ...
+        }
 
         public global::System.Type UnderlyingType { get; }
         // ...
