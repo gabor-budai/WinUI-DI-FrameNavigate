@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "WinUI.DI.FrameNavigate (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "WinUI.DI.FrameNavigate (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
