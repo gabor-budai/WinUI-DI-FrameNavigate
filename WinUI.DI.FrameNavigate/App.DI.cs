@@ -26,6 +26,9 @@ file class XamlMetadataProvider : IXamlMetadataProvider
 
     private IServiceProviderIsService IsService => _isService ??= ServiceProvider.GetRequiredService<IServiceProviderIsService>();
 
+    // Has an undocumented 'feature'?? I was in a wrong branch (https://github.com/microsoft/microsoft-ui-xaml) don't blame me :)
+    // Here is the source generator: https://github.com/gabor-budai/WinUI.DependencyInjection.
+
     // WinUI has an undocumented 'feature', it has a type activator 'service', I think it provides interpolation between the managed and
     // unmanaged code. This type activator has two major flaws, it does not support parameterless constructors
     // (it can be resolved by the inversion of control pattern) and frame navigation does not allow passing an instance of the page. So DI
